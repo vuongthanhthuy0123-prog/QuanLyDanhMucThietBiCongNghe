@@ -25,13 +25,7 @@ namespace QuanLyDanhMucThietBiCongNghe
 
         private void InitializeData()
         {
-            _productList = new List<Product>
-            {
-                new Product { ProductId = "SP01", ProductName = "iPhone 15 Pro Max", CategoryName = "Điện thoại", UnitPrice = 30000000, Quantity = 10, ImagePath = "" },
-                new Product { ProductId = "SP02", ProductName = "Laptop Dell XPS 15", CategoryName = "Laptop", UnitPrice = 25000000, Quantity = 5, ImagePath = "" }
-            };
-
-            cboCategory.Items.AddRange(new string[] { "Điện thoại", "Laptop", "Phụ kiện", "Thần đồng công nghệ" });
+            cboCategory.Items.AddRange(new string[] { "Điện thoại", "Laptop", "Phụ kiện" });
             cboCategory.SelectedIndex = 0;
         }
 
